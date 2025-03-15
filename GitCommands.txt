@@ -134,6 +134,7 @@ git push -u origin main
 To push all the branches to github:
 git push --all
 
+To create a pull request(where someone can review and approve the changes)
  
 
 
