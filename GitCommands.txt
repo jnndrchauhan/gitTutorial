@@ -145,7 +145,15 @@ or just enter
 git pull 
 it does git fetch and merge in the same command. 
 
+to download all the history from remote branch
+git fetch
 
+to merge all the changes in the local
+git merge
+
+or just enter
+git pull 
+it does git fetch and merge in the same command. 
 
 
 
