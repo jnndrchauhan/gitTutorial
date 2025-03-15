@@ -121,6 +121,20 @@ We do not need additional branch after making our changes :
 TO delete a branch
 git branch -d branchname
 
+CLONE REMOTE repositry
+git clone https://repo
+
+To add REMOTE git and store it in alias "origin"
+
+git remote add origin https://github.com/jnndrchauhan/gitTutorial.git
+
+to push our changes to remote git
+git push -u origin main
+
+
+
+
+
 
 
 
