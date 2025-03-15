@@ -131,6 +131,12 @@ git remote add origin https://github.com/jnndrchauhan/gitTutorial.git
 to push our changes to remote git
 git push -u origin main
 
+To push all the branches to github:
+git push --all
+
+ 
+
+
 
 
 
