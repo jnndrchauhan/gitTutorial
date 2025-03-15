@@ -1,0 +1,127 @@
+-- To start commiting your change you have to configure your username and email : 
+
+git config --global user.name "xyz"
+git config --global user.email xyz@gmail.com
+
+-- To view where the gitconfig file is stored : 
+
+git config --list --show-origin
+
+
+
+To initiate branch 
+git config --global init.default branch main
+
+
+To get help about a command : 
+git <command> -h
+example: git config -h
+
+To initialize a folder as Git:
+
+git init
+
+To know the status of the files : 
+
+git status
+
+
+To add the files for tracking : 
+The files sit in staging until we are ready to commit our files to the master. 
+git add <filename>/<foldername>
+
+To untrack/ remove from stage : 
+
+git rm --cached <filename>
+
+
+To ignore files from commiting : 
+
+1) make text file in a folder
+2) create .gitignore file
+3) add the extension  for example *.txt
+
+
+Track all the files 
+git add -all
+OR 
+git add .
+
+To commit your changes : 
+git commit -m "These are first changes"
+
+
+To know what has been modified : 
+git diff
+
+
+3 stages of a file in git
+1) Working file :This is the local file
+2) Staging : where we have not commited and we can still wish to make more changes to the file. This is done by "add"
+3) Commit : this is added to the logs . 
+
+if we are not ready for staging : 
+git restore --staged <filename>
+
+The file is moved back to working file and if we are to commit there are no changes to the file. 
+
+
+TO COMMIT without staging the file : 
+git commit -a -m "Message we want to be written"
+
+
+To restore a deleted file : 
+git restore <filename>
+
+
+To change the name of a file : 
+git mv "file name1" "filename"
+
+to view all the different changes/ commit : 
+git log
+
+
+to look at short summary :
+git log --oneline
+
+
+To change the text of the last commit :
+git commit -m "Changed TExt again" --amend
+
+To view all the different changes in the log 
+git log -p
+
+
+To rollback to a previous version
+git reset <hash>
+
+
+Create a new branch and add your changes : 
+git branch "branch name" 
+
+to check how many branches we have :
+git branch
+
+to switch to another branch
+git switch branchname
+
+Shortcut to create and switch to the new branch
+git switch -c branchname 
+
+commit the changes in the branch
+git commit -a -m "Commit all changes"
+
+Merges changes in MASTER:
+navigate back to master
+git switch master
+git merge -m "TEXT" <branchname to be merged">
+
+
+We do not need additional branch after making our changes : 
+TO delete a branch
+git branch -d branchname
+
+
+
+
+
